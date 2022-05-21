@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Proxima';
+    src: url('../fonts/proximanova_regular.ttf');
+}
+@font-face {
+    font-family: 'Proxima-Bold';
+    src: url('../fonts/proximanova_bold.otf');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf');
+}

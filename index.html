@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biamo is a crypto casino where you can easy increase your deposit">
+    <meta name="keywords" content="biammo crypto casino deposit game play increase">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/mediaQueries.css">
+    <title>Biamo - crypto casino </title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logotype">
+                <img src="./svg/logotype.svg" alt="logotype">
+            </div>
+            <div class="greet">
+                <div class="greet__title_top">
+                    <span class="greet__double">Double</span>
+                    <span>your</span>
+                </div>
+                <span class="greet__urCryptDeps">cryptodeposits</span>
+            </div>
+            <div class="register">
+                <a href="#registration" class="button">Sign up</a>
+            </div>
+            <div class="decorations">
+                <img class="decorations__king" src="./svg/king.svg" alt="king">
+                <img class="decorations__chest" src="./svg/chest.svg" alt="chest">
+                <img class="decorations__monkink" src="./svg/mohking.svg" alt="monkey king">
+                <div class="decorations__shadow"></div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="adv">
+            <h2 class="adv__title">Advantages</h2>
+        </div>
+        <div class="content">
+            <div class="card">
+                <img class="card__thumbnail" src="./images/safety.png" alt="safety transactions">
+                <span class="card__title">Safety and lightness</span>
+                <p class="card__content">Quick registration, safe and secure depositing and easy withdrawal to: GooglePay, 
+                    AstroPay, PerfectMoney, Visa, MasterCard, Bitcoin, CoinsPaid, Interac, Tether and others.</p>
+            </div>
+
+            <div class="card">
+                <img class="card__thumbnail" src="./images/deposit.png" alt="safety transactions">
+                <span class="card__title">First deposit</span>
+                <p class="card__content">If you play for the first time, you get up €500 extra bonus on your first deposit + 
+                    300 extra spins for free (second deposit bonus). That way you can earn really big amounts of real money.</p>
+            </div>
+
+            <div class="card">
+                <img class="card__thumbnail" src="./images/help.png" alt="safety transactions">
+                <span class="card__title">Help to Win</span>
+                <p class="card__content">COVID-19 has brought many to the brink of poverty, incomes have suffered greatly. 
+                    Our casino has helped millions of players by guiding them to earn money safely and play responsibly.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="registration" id="registration">
+                <span class="registration__title">Fast registration</span>
+            </div>
+            <form method="post">
+                <div class="form">
+                    <div class="input__block">
+                        <span class="form__icon lock"></span>
+                        <input class="form__input" placeholder="E-mail" type="email" required>
+                    </div>
+                    <div class="input__block drop-block" data-select="currency">
+                        <span class="form__icon wallet"></span>
+                        <div class="form__input dropdown" id="input-currency">Cyrrency</div>
+                        <span class='drop-arrow input-currency-arrow'>&#10094;</span>
+                    </div>
+                    <div class="drop__list" id="currency">
+                        <ul>
+                            <li>usd</li>
+                            <li>eur</li>
+                            <li>jpy</li>
+                            <li>gbp</li>
+                            <li>aud</li>
+                        </ul>
+                    </div>
+                    <div class="input__block drop-block" data-select="countries">
+                        <span class="form__icon country"></span>
+                        <div class="form__input dropdown" id="input-country" data-arrow="input-country-arrow">Country</div>
+                        <span class='drop-arrow input-country-arrow'>&#10094;</span>
+                    </div>
+                    <div class="drop__list" id="countries">
+                        <ul class="countries">
+                            <li class="russian">russian</li>
+                            <li class="italy">italy</li>
+                            <li class="finland">finland</li>
+                            <li class="spain">spain</li>
+                            <li class="ukraine">ukraine</li>
+                            <li class="singapore">singapore</li>
+                        </ul>
+                    </div>
+
+                    <button class="button bottom-button">Sign up</button>
+                    <div class="form__policy">
+                        <div class="checkbox__block">
+                            <input id="agree" class="checkbox" type="checkbox">
+                            <label for="agree" class="custom__checkbox"></label>
+                            <label for="agree">I agree to the <a class="policy-link" href="https://biamo.bet/en/">terms and conditions</a></label>
+                        </div>
+                        <div class="checkbox__block">
+                            <input id="older" class="checkbox" type="checkbox">
+                            <label for="older" class="custom__checkbox"></label>
+                            <label for="older">I confirm that I am 18 years old or order</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <img class="decor-crog" src="./images/crog.png" alt="crog decoration">
+            <img class="decor-pirate" src="./images/pirate.png" alt="pirate decoration">
+        </div>
+    </footer>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>

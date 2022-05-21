@@ -1,0 +1,120 @@
+header{
+    width: 100%;
+    height: auto;
+    background: url('../images/bg_head.png') center top no-repeat;
+    background-size: cover;
+}
+.logotype{
+    user-select: none;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greet {
+    position: relative;
+    margin-bottom: 40px;
+    font-family: 'Proxima-Bold';
+    font-size: 6.75em;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+.greet__title_top{
+    display: flex;
+    align-items: center;
+}
+.greet__double {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.greet__double::before {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 180px;
+    background: url('../images/Tether.png') center no-repeat;
+}
+.greet__double::after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 180px;
+    background: url('../images/bitkoin.png') center no-repeat;
+}
+.greet__urCryptDeps {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+    margin-left: 90px;
+}
+.greet__urCryptDeps::after {
+    position: relative;
+    content: '';
+    display: block;
+    width: 180px;
+    height: 180px;
+    background: url('../images/ethereum.png') center no-repeat;
+    bottom: 70px;
+}
+.register {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    width: 336px;
+    height: 73px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(
+        rgba(255, 153, 0, 1),
+        rgba(255, 204, 96, 1),
+        rgba(255, 118, 19, 1)
+    );
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Proxima';
+    line-height: 30px;
+    box-shadow: inset 0 1px rgba(255, 209, 111, 1),
+        0 -1px rgba(255, 165, 96, 1);
+    z-index: 100;
+}
+.decorations {
+    user-select: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.decorations__king {
+    position: relative;
+    bottom: 120px;
+    right: 70px;
+}
+.decorations__chest {
+    position: absolute;
+    z-index: 10;
+}
+.decorations__monkink {
+    position: relative;
+    bottom: 80px;
+    left: 130px;
+}
+.decorations__shadow{
+    position: absolute;
+    bottom: -130px;
+    width: 738px;
+    height: 132px;
+    background-color: rgba(20, 20, 20, 1);
+    box-shadow: 0 -60px 35px rgba(20, 20, 20, 1);
+    z-index: 100;
+}

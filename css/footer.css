@@ -1,0 +1,302 @@
+footer{
+    position: relative;
+    width: 100%;
+    background: url('../images/bg_footer.png') center bottom no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    position: relative;
+    max-width: 1640px;
+    height: 100%;
+    margin: 0 auto;
+}
+.decor-crog {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.decor-pirate {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.registration {
+    display: flex;
+    justify-content: center;
+}
+.registration__title {
+    margin-bottom: 100px;
+    font-size: 6.75em;
+    font-family: 'Proxima';
+    font-weight: 800;
+    color: white;
+    white-space: wrap;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.input__block{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: rgba(28, 28, 28, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.drop-block{
+    cursor: pointer;
+}
+.form__icon{
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    border-radius: 3px;
+}
+.lock{
+    background: url('../svg/Lock.svg') center no-repeat;
+}
+.wallet{
+    background: url('../svg/Wallet.svg') center no-repeat;
+}
+.country{
+    background: url('../svg/Vector.svg') center no-repeat;
+}
+.form__input {
+    display: flex;
+    align-items: center;
+    width: 354px;
+    height: 73px;
+    padding-left: 20px;
+    background-color: rgba(28, 28, 28, 1);
+    border: 1px rgba(38, 38, 38, 1);
+    border-radius: 10px;
+    outline: none;
+    font-family: 'Proxima';
+    color: white;
+    font-size: 21px;
+    line-height: 26px;
+}
+.input__block.active{
+    border: 2px solid rgba(255, 158, 45, 1);
+    box-shadow:
+        -1px -1px 5px rgba(255, 158, 45, 1),
+        1px 1px 5px rgba(255, 158, 45, 1);
+}
+input::placeholder{
+    color: #a9a9a9;
+}
+.input__block.active > input::placeholder{
+    color: rgba(28, 28, 28, 1);
+}
+.dropdown{
+    color: #a9a9a9;
+}
+.drop-arrow{
+    position: absolute;
+    transform: rotate( 180deg );
+    right: 20px;
+    color: #a9a9a9;
+}
+.bottom-button{
+    margin-top: 30px;
+    width: 420px;
+}
+
+.form__policy {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+.checkbox__block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+}
+.checkbox{
+    display: none;
+}
+.custom__checkbox {
+    width: 18px;
+    height: 18px;
+    background: none;
+    background-color: rgba(28, 28, 28, 1);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 158, 45, 1);
+    cursor: pointer;
+}
+.custom__checkbox.agree{
+    background: url('../svg/apply.svg') center no-repeat;
+}
+.policy-link {
+    color: rgba(255, 158, 45, 1);
+}
+#currency{
+    background-color: rgba(28, 28, 28, 1);
+    margin-top: -25px;
+    border-radius: 10px;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#countries{
+    background-color: rgba(28, 28, 28, 1);
+    margin-top: -25px;
+    border-radius: 10px;
+    max-width: 400px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.drop__list{
+    width: 100%;
+    display: none;
+}
+.drop__list.show{
+    display: block;
+}
+.drop__list > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.drop__list > ul > li{
+    display: flex;
+    padding-left: 5px;
+    align-items: center;
+    font-family: 'Proxima';
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+.drop__list > ul > li.choisenCyrrency{
+    position: relative;
+    background-color: rgba(50, 52, 54, 1);
+    padding: 10px 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+.drop__list > ul > li.choisenCountry{
+    position: relative;
+    background-color: rgba(50, 52, 54, 1);
+    padding: 10px 5px;
+    width: 90%;
+    border-radius: 5px;
+}
+.drop__list > ul > li.choisenCyrrency::after{
+    position: absolute;
+    right: 18px;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: url('../svg/choisen.svg') center no-repeat;
+}
+.drop__list > ul > li.choisenCountry::after{
+    position: absolute;
+    right: 18px;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: url('../svg/choisen.svg') center no-repeat;
+}
+.selected{
+    font-size: 21px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+.active-item{
+    color: red;
+}
+.drop-arrow.open{
+    transform: rotate(-90deg);
+}
+.russian::before {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: url('../svg/russia.svg') center no-repeat;
+}
+.italy::before  {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: url('../svg/italy.svg') center no-repeat;
+}
+.finland::before  {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: url('../svg/finland.svg') center no-repeat;
+}
+.spain::before  {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: url('../svg/spain.svg') center no-repeat;
+}
+.ukraine::before  {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: url('../svg/ukraine.svg') center no-repeat;
+}
+.singapore::before  {
+    content: '';
+    margin-right: 8px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: url('../svg/singapore.svg') center no-repeat;
+}
